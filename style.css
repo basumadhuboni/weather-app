@@ -1,0 +1,120 @@
+
+*{
+    box-sizing: border-box;   
+     margin: 0;
+    padding: 0;
+}
+
+
+.bgm {
+    margin-top: 0;
+    background-image: url("/assets/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+.temperature{
+    display: flex;
+    flex-direction:column;
+}
+.container {
+    display:none;
+    flex-direction: column;
+    max-width: 400px; 
+    height: 460px;
+    margin: 50px auto; /* Center the container horizontally */
+    background-color: #cc68c4; 
+    background-blend-mode: lighten;
+    padding: 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(11, 11, 11, 0.9);
+    
+}
+
+.container * {
+    text-align: center;
+    font-weight: bold; 
+    font-size: 18px;
+}
+
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:30%;
+    transform:translate(450px,30px);
+    
+}
+
+.input-box {
+    width: 70%; 
+    padding: 10px;
+    font-size: 16px; 
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: transparent; 
+}
+
+
+/* Style the search button (Font Awesome icon) */
+.fa-solid.fa-magnifying-glass-location {
+    cursor: pointer; 
+    background: none; 
+    border: none; 
+    color: #3e3c3c; 
+    font-size: 30px; 
+    margin-left: 10px; 
+}
+
+.fa-solid.fa-magnifying-glass-location:hover {
+    color: #050505; 
+    font-size: 40px;
+}
+
+/*weather body is initialyy not displayed...it is displayed only when we enter valid location..style updated in js*/
+.weather-body {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top:5px; 
+}
+
+.weather-body img {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.weather-box {
+    background-color:#cc68c4; 
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.weather-box p {
+    margin-bottom: 5px; 
+}
+.weather-details{
+    flex-direction: row;
+    display: flex;
+    gap: 80px;
+}
+
+.location-not-found{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px; 
+}
+.location-not-found img{
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 10px; 
+}
