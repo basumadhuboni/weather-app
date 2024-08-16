@@ -32,7 +32,7 @@ async function checkWeather(city){
         weather_body.style.display = "none";
        console.log("error");
        body.style.backgroundImage='none';
-       body.style.backgroundImage = 'url("/assets/background.png")';
+       body.style.backgroundImage = 'url("assets/background.png")';
        return;
     }
     
@@ -51,30 +51,30 @@ async function checkWeather(city){
     switch (weather_data.weather[0].main) {
         case 'Clouds':
         case 'overcast clouds': // Note: Use separate case statements for each condition
-            weather_img.src = "/assets/cloudy.png";
-            body.style.backgroundImage = 'url("/assets/cloudbgm.jpg")';
+            weather_img.src = "assets/cloudy.png";
+            body.style.backgroundImage = 'url("assets/cloudbgm.jpg")';
             break;
         case 'Haze':
         case 'Mist':
-            weather_img.src = "/assets/haze.png";
-            body.style.backgroundImage = 'url("/assets/mistbgm.jpg")';
+            weather_img.src = "assets/haze.png";
+            body.style.backgroundImage = 'url("assets/mistbgm.jpg")';
             break;
         case 'Clear':
-            weather_img.src = "/assets/sun.png";
-            body.style.backgroundImage = 'url("/assets/clearbgm.jpg")';
+            weather_img.src = "assets/sun.png";
+            body.style.backgroundImage = 'url("assets/clearbgm.jpg")';
             break;
         case 'Rain':
         case 'Drizzle':
-            weather_img.src = "/assets/raining.png";
-            body.style.backgroundImage = 'url("/assets/rainbgm.jpg")';
+            weather_img.src = "assets/raining.png";
+            body.style.backgroundImage = 'url("assets/rainbgm.jpg")';
             break;
         case 'Snow':
-            weather_img.src = "/assets/snow.png";
-            body.style.backgroundImage = 'url("/assets/snowbgm.jpg")';
+            weather_img.src = "assets/snow.png";
+            body.style.backgroundImage = 'url("assets/snowbgm.jpg")';
             break;
         default:
-            weather_img.src = "/assets/default.png";
-            body.style.backgroundImage = 'url("/assets/defaultbackground.jpeg")';
+            weather_img.src = "assets/default.png";
+            body.style.backgroundImage = 'url("assets/defaultbackground.jpeg")';
             break;
     }
     
